@@ -1,0 +1,32 @@
+<!-- 親テンプレートを読み込む-->
+{% extends 'kakeibo/base.html' %}
+{% block content %}
+ <div class="content-wrapper">
+   <div class="container-fluid">
+     <!-- パンくずリストの設定-->
+     <ol class="breadcrumb">
+       <li class="breadcrumb-item">
+         <a href="{% url 'kakeibo:kakeibo_list' %}">TOP</a>
+       </li>
+       <li class="breadcrumb-item active">カテゴリ毎の合計金額割合</li>
+     </ol>
+     <!--ページタイトル-->
+     <div class="card mb-3">
+       <div class="card-header">
+          <h3><b>家計簿アプリ（カテゴリ毎の合計金額割合）</b></h3></div>
+       <div class="card-body">
+         <!-- 円グラフの描画-->
+         <div class="chart_container">
+             <canvas id='CircleChart' style="position: relative; height:1vh; width:1vw"></canvas>
+           </div>
+       </div>
+      </div>
+   </div>
+  </div>
+   <style>
+      .chart_container {
+          width: 640px;
+          margin: auto;
+        }
+  </style>
+{% endblock content %}

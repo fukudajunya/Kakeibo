@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'kakeibo',
     'bootstrapform',
+    'bootstrap_datepicker_plus',
 ]
 
 MIDDLEWARE = [

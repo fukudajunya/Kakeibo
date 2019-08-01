@@ -12,8 +12,13 @@
                <li class="breadcrumb-item">
                  <a href="{% url 'kakeibo:kakeibo_list' %}">TOP</a>
                </li>
-               <li class="breadcrumb-item active">家計簿アプリ</li>
                <li class="breadcrumb-item active">データ登録</li>
+               <li class="breadcrumb-item">
+                  <a href="{%url 'kakeibo:kakeibo_circle' %}">円グラフ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{%url 'kakeibo:kakeibo_line' %}">月ごとの支出遷移</a>
+                </li>
              </ol>
              <!-- Example DataTables Card-->
              <div class="card mb-3">
